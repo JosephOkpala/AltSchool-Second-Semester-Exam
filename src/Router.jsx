@@ -10,7 +10,6 @@ const Router = () => {
         <Routes>
             <Route path='/' element={<Home/>}/>
             <Route path='/repos' element={<Repositories/>}/>
-//             <Route path='/repos/:repoId' element={<RepoDetails/>}/>
             <Route path='/error' element={<ErrorBound/>}/>
             <Route path='/profile' element={<Profile/>}/>
             <Route path='*' element={<ErrorPage/>}/>
