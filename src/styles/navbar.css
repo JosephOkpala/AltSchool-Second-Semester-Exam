@@ -1,0 +1,47 @@
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4rem;
+  background-color: rgb(21, 21, 21);
+  position: sticky;
+  height: 100vh;
+  padding-left: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  background-color: rgb(21, 21, 21);
+  color: white;
+  text-align: left;
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 50px;
+  transition: 0.3s ease;
+}
+
+nav a:hover {
+  background-color: grey;
+}
+
+@media (max-width: 768px) {
+  nav {
+    height: 10vh;
+    flex-direction: row;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 0 1rem;
+    position: fixed;
+    width: 100%;
+  }
+
+  nav a {
+    border-radius: 0;
+  }
+
+  nav a:hover {
+    background-color: unset;
+    color: rgb(210, 210, 210);
+  }
+}
