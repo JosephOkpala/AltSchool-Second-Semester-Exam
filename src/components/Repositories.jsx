@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import "../styles/repos.css";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const Repositories = () => {
   const [repos, setRepos] = useState([]);
@@ -71,7 +71,7 @@ const Repositories = () => {
               <p className="mg-b">Branch: {repo.default_branch}</p>
               <p className="mg-b">Created at: {repo.created_at}</p>
               <p>Issues: {repo.open_issues}</p>
-              <Link to={`${repo.id}`} name={`${repo.owner.login}`}><button className="btn-more">Click</button></Link>
+//               <Link to={`${repo.id}`} name={`${repo.owner.login}`}><button className="btn-more">Click</button></Link>
             </div>
           </div>
         ))}
